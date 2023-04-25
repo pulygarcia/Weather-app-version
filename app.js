@@ -20,10 +20,11 @@ function obtenerClima(e) {
 }
 
 function consultarApi() {
+    const apiKey = 'e30ba98b22658ba30cff614092b3a8a2'
     //spinner antes del fetch
     spinner();
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad.value},${pais.value}&appid=${window.apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad.value},${pais.value}&appid=${apiKey}`)
         .then(resultado => {
             return resultado.json();
         })
