@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>App clima</title>
+</head>
+<body>
+    <main class="container">
+        <div class="app">
+            <div class="app__header">
+                <h1 class="app__heading">Weather App</h1>
+                <img src="img/1494258097-rainrainfalldrizzlesuncloudweatherforecast_84357.svg" alt="weather icon">
+            </div>
+
+            <form class="app__form formulario">
+                <input class="app__input" type="text" name="ciudad" id="ciudad" placeholder="Ingresa una ciudad">
+            
+                <select class="app__input" type="text" name="pais" id="pais">
+                    <option value="" selected disabled>--Selecciona el país--</option>
+                    <option value="ARG">Argentina</option>
+                    <option value="USA">Estados Unidos</option>
+                    <option value="MEX">México</option>
+                    <option value="PER">Perú</option>
+                </select>
+
+                <button type="submit" class="app__submit">Obtener clima</button>
+            </form>
+
+            <div id="resultado"></div>
+
+            <footer class="footer">
+                <p>Make by puly <span>Frontend dev.&copy;</span></p>
+                <a href="https://www.linkedin.com/in/jose-ignacio-robledo-puly-008661239/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icono icon icon-tabler icon-tabler-brand-linkedin" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <line x1="8" y1="11" x2="8" y2="16" />
+                    <line x1="8" y1="8" x2="8" y2="8.01" />
+                    <line x1="12" y1="16" x2="12" y2="11" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                  </svg></a>
+        
+                <a href="https://first-portfolio-puly.netlify.app" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icono icon icon-tabler icon-tabler-briefcase" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="7" width="18" height="13" rx="2" />
+                    <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                    <line x1="12" y1="12" x2="12" y2="12.01" />
+                    <path d="M3 13a20 20 0 0 0 18 0" />
+                  </svg></a>
+            </footer>
+        </div>
+    </main>
+    <script src="key.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
