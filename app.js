@@ -23,7 +23,7 @@ function consultarApi() {
     //spinner antes del fetch
     spinner();
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad.value},${pais.value}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad.value},${pais.value}&appid=${window.apiKey}`)
         .then(resultado => {
             return resultado.json();
         })
